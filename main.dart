@@ -13,16 +13,29 @@ main() {
   // set.add('green');
   // print(set);
 
-  Set set = new Set();
-  set.add('red');
-  set.add('green');
-  set.toList();
-  List list = set.toList();
-  print(list);
-  
+  // Set set = new Set();
+  // set.add('red');
+  // set.add('green');
+  // set.toList();
+  // List list = set.toList();
+  // print(list);
+
 
   // print(set.toList());
 
+  // Map map = new Map();
+  // map['name'] = '周华建';
+  // print(map);
+
+  // Map map = new Map();
+  // map['name'] = '张德志';
+  // print(map);
+
+  // Map map = new Map();
+  // map.addAll({
+  //   'work':['info']
+  // });
+  // print(map);
 
 
 
