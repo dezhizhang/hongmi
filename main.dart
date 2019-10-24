@@ -1,10 +1,7 @@
-import 'Person.dart';
+import 'Animal.dart';
 
 
-main() {
-  var p = new Person('周建建',10);
-  print(p.getInfo());
-  Person.now();
-
+void main() {
+  var aminal = new Animal('哈哈', 12);
+  print(aminal.printInfo());
 }
-
