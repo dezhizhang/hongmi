@@ -1,13 +1,14 @@
-main() {
-
-
-  List myList = ['red','yellow','pink'];
-  for(var i=0;i<myList.length;i++) {
-    print(myList[i]);
+class Person{
+  String name = '张三';
+  int age = 22;
+  getInfo() {
+    return '${this.name} ----${this.age}';
   }
+}
 
-
-
-
+main() {
+  var p = new Person();
+  print(p.getInfo());
+  
 }
 
