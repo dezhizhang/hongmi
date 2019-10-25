@@ -9,15 +9,21 @@
 //   }
 // }
 
-class Person{
-  static String name = '张三';
-  static show () {
-    return 123;
-  }
 
+class Person{
+  String name;
+  int age;
+  Person(this.name,this.age);
+  printInfo() {
+    print('${this.name} ----${this.age}');
+  }
 }
 
 main() {
- print(Person.show());
+  var p = new Person('哈哈', 22);
+  p..name = '李四'
+   ..age = 100
+   ..printInfo();
+
 
 }
