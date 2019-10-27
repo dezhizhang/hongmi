@@ -1,53 +1,29 @@
-// class Person{
-//   String name;
-//   int age;
-//   Person(this.name,this.age);
-//   printInfo() {
-//     print('${this.name} ----${this.age}');
 
-//   }
+abstract class A {
+  printA();
 
-// }
+}
 
-// class Web extends Person{
-//   String sex;
-//     Web(String name,int age,String sex):super(name,age){
-//        this.sex = sex;
-//     }
-//     run() {
-//       print('${this.name} ---${this.age} ----${this.sex}');
-//     }
+abstract class B {
+  printB();
+}
 
-// }
+class C implements A,B {
+  @override
+  printB() {
+    // TODO: implement printB
+    return '2222';
+  }
+  @override
+  printA() {
+    // TODO: implement printA
+    return '333';
+  }
+}
 
-// main() {
-//   var web = new Web('哈哈', 22,'男');
-//   web.printInfo();
-//   web.run();
+main() {
+  C c = new C();
+  print(c.printB());
+  print(c.printA());
 
-// }
-
-// class Person{
-//   String name;
-//   int age;
-//   Person(this.name,this.age);
-//   printInfo() {
-//     print('${this.name} ---${this.age}');
-//   }
-// }
-
-// class Web extends Person{
-//   String sex;
-//   Web(String name,int age,String sex):super(name,age){
-//     this.sex = sex;
-//   }
-//   run() {
-//     print('${this.name} ---${this.age} ----${this.sex}');
-// }
-// }
-
-// main() {
-//   var web = new Web('哈哈',22,'男');
-//   web.run();
-
-// }
+}
