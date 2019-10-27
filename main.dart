@@ -1,31 +1,18 @@
-abstract class Db{
-  add();
-  edit();
-  delete();
-
-}
-
-class Mysql implements Db{
-  @override
-  add() {
-    // TODO: implement add
-    return '我是add';
+class Point<T> {
+  List list = new List<T>();
+  void add(T value) {
+    this.list.add(value);
   }
-  @override
-  edit() {
-    // TODO: implement edit
-    return '我是edit';
-  }
-  @override
-  delete() {
-    // TODO: implement delete
-    return '我是delete';
+  void pointInfo() {
+    for(var i=0;i<this.list.length;i++) {
+      print(this.list[i]);
+    }
   }
 }
 
-void main() {
-  Mysql m = new Mysql();
-  print(m.add());
-  
+main() {
+  Point p = new Point<String>();
+  p.add('123');
+  p.pointInfo();
 
 }
