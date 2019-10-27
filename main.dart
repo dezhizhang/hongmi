@@ -1,24 +1,18 @@
-// import 'Animal.dart';
+abstract class Animal{
+  eat();
 
-
-// void main() {
-//   var aminal = new Animal('哈哈', 12);
-//   print(aminal.printInfo());
-// }
-
-
-class Rect{
-  num height;
-  num width;
-  Rect(this.height,this.width);
-  area() {
-    return this.width * this.height;
-  }
 }
 
-
+class Dog extends Animal{
+  @override
+  eat() {
+    // TODO: implement eat
+    return '我是小狗';
+  }
+  
+}
 void main() {
-  Rect r = new Rect(10, 20);
-  print(r.area());
+  Dog d = new Dog();
+  print(d.eat());
   
 }
